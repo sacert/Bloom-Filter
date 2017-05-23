@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bloom Filter</title>
+		<link href="css/hash.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+		<h2>Bloom Filter</h2>
+		<div id="container">
+            <canvas width='400' height='50' ></canvas>
+		</div>
+        <div class = "text_input">
+			<input type="text" name="text" id="text" value="" placeholder="Enter Word Here..." style="width: 250px;"/>
+		</div>
+		<div class = "buttons" align="center">
+			<input type="button" class = "add" value="add" onclick="add();"/>
+			<input type="button" class = "check" value="check" onclick="potentiallyContains();"/>
+		</div>
+		<div id="found"></div>
+		<div id="list">
+			<ul id = "list_set"></ol>
+		</div>
+		<div class="footer">Made by <a href="https://github.com/sacert">Stephen Kang</a>. Source on <a href="https://github.com/sacert/Bloom-Filter">GitHub</a></div>
+		<script src="javascript/murmurhash.js"></script>
+		<script src="javascript/hash.js"></script>
+    </body>
+</html>
