@@ -110,12 +110,11 @@ function draw(check, bitList) {
 	var k = 0;
 	var sortedList = []
 
-	if (sortedList.length != 0) 
+	if (bitList) 
 		sortedList = bitList.sort(function(a, b){return a-b});
 	
 	for ( var x = 0; x < filterSize; ++x ) {
 		if (check && x == sortedList[k]) {
-			console.log(x + " " + bitList + " " + k);
 			k++;
 			ctx.fillStyle = "rgba(126, 192, 238, 0.4)";
 		} else {
