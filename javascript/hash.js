@@ -93,7 +93,7 @@ function potentiallyContains() {
 	for (var n = 0; n < numHashFunctions; n++) {
 		var hashNum = nthHash(n, str);
 		if (!(m_bits[hashNum])) {
-			document.getElementById('found').innerHTML += "not found";
+			document.getElementById('found').innerHTML = "not found";
 			return false;
 		}
 		bitList.push(hashNum);
